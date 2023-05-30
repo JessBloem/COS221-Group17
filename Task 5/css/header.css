@@ -1,0 +1,48 @@
+header {
+    background-color: rgba(164, 164, 164, 0.176);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+#companyName {
+    font-size: 18px;
+    font-family: cursive;
+    font-weight: 500;
+}
+
+.searchBarDiv {
+    margin-top: 10px;
+    justify-content: end;
+    margin-right: 20px;
+}
+
+.searchBarDiv>input {
+    width: 250px;
+}
+
+.searchBarDiv>button {
+    width: 80px;
+}
+
+
+#mynavbar {
+    justify-content: end;
+}
+
+.nav-item {
+    min-width: 130px;
+}
+
+#mynavbar .signupLogin {
+    min-width: fit-content;
+}
+
+#mynavbar .signupLogin>a {
+    min-width: min-content;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#mynavbar .signupLogin>a:first-child {
+    margin-right: 20px;
+}
