@@ -32,7 +32,7 @@ Class Connect
     }
   }
 
-  private function __destruct()
+  public function __destruct()
   {
     mysqli_close($this->conn);
     session_destroy();
@@ -40,6 +40,7 @@ Class Connect
 
   public function runSelectQuery($sql)
   {
+    //echo "\nSQL: " .$sql;
     $result = mysqli_query($this->conn, $sql);
     if(mysqli_num_rows($result)==0) return false; //Returns false if the database has empty resonse, i.e. nothing matched
     $output = $result -> fetch_all(MYSQLI_ASSOC);
